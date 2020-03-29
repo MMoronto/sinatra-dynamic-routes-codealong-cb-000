@@ -20,10 +20,9 @@ class App < Sinatra::Base
   end
   
   get '/multiply/:num1/:num2' do
-  @multiply = all_the_numbers.select do |meultiply|
-    multiply.id == params[:id]
-  end.first
-  erb :'/multiply/show.html'
-end
+  @multiplied = params[:num1].to_i * params[:num2].to_i
+  "#{@multiplied}"
+  end
+
 
 end
