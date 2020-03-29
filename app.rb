@@ -18,5 +18,12 @@ class App < Sinatra::Base
     @user_name = params[:name]
     "Goodbye, #{@user_name}!"
   end
+  
+  get '/multiply/:num1/:num2' do
+  @multiply = all_the_medicines.select do |medicine|
+    medicine.id == params[:id]
+  end.first
+  erb :'/medicines/show.html'
+end
 
 end
