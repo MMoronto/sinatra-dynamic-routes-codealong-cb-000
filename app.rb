@@ -20,10 +20,10 @@ class App < Sinatra::Base
   end
   
   get '/multiply/:num1/:num2' do
-  @multiply = all_the_medicines.select do |medicine|
-    medicine.id == params[:id]
+  @multiply = all_the_numbers.select do |meultiply|
+    multiply.id == params[:id]
   end.first
-  erb :'/medicines/show.html'
+  erb :'/multiply/show.html'
 end
 
 end
